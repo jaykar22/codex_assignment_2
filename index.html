@@ -1,0 +1,783 @@
+<html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .main-box {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .intro-box {
+        height: 100%;
+        width: 100vw;
+        /* border: 1px solid black; */
+        background-color: rgba(4, 56, 115, 1);
+
+    }
+
+    .header {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 110px;
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 1);
+        gap: 10px;
+    }
+
+    .down-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 24px;
+        width: 29px;
+    }
+
+    .button1 {
+        padding: 10px 20px;
+        background-color: rgba(255, 228, 146, 1);
+        border-radius: 8px;
+        color: rgba(4, 56, 115, 1);
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+
+    .button2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: rgba(79, 156, 249, 1);
+        border-radius: 8px;
+        color: rgba(255, 255, 255, 1);
+        /* width: 227px; */
+        letter-spacing: -2%;
+        line-height: 28px;
+        gap: 10px;
+    }
+
+    .inter-button {
+        font-family: "Inter", sans-serif;
+        /* font-weight: 500; */
+    }
+
+    .intro-body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80vh;
+        padding-top: 60px;
+        background-image: url(Element.png);
+        background-repeat: no-repeat;
+        background-position: 0% 150%;
+
+    }
+
+    .intro {
+        width: 77%;
+        height: 66%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+
+    .intro-txt {
+        color: rgba(255, 255, 255, 1);
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+    }
+
+    .intro-img {
+        border: 1px solid rgba(196, 222, 253, 1);
+        width: 40%;
+        height: 115%;
+        background-color: rgba(196, 222, 253, 1);
+        margin-bottom: 50px;
+    }
+
+    .project-img {
+        border: 1px solid rgba(196, 222, 253, 1);
+        width: 40%;
+        height: 100%;
+        background-color: rgba(196, 222, 253, 1);
+    }
+
+    .project-back-img {
+        background-image: url(BACKGROUND.png);
+        background-repeat: no-repeat;
+        background-size: 26% 48%;
+        height: 100%;
+        /* width: 100vw; */
+        background-position: 0% 84%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .project-txt {
+        color: rgba(33, 37, 41, 1);
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .get-started {
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -2%;
+        border-radius: 6px;
+        background-color: rgba(79, 156, 249, 1);
+        width: 201;
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        height: 63;
+        gap: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .project {
+        width: 77%;
+        height: 66%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+
+    .extension {
+        background-color: rgba(4, 56, 115, 1);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .extension-txt {
+        color: rgba(255, 255, 255, 1);
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .extension-img {
+        border: 1px solid rgba(196, 222, 253, 1);
+        width: 38%;
+        height: 100%;
+        background-color: rgba(196, 222, 253, 1);
+    }
+
+    .choose {
+        height: 160%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .choose-head {
+        width: 77.10%;
+        height: 13.44%;
+        /* border: 1px solid black; */
+
+    }
+
+    .choose-back {
+        background-image: url(underline.png);
+        background-repeat: no-repeat;
+        background-position: 67% 115%;
+        object-fit: contain;
+    }
+
+    .choose-body {
+        width: 77.10%;
+        /* border: 1px solid black; */
+        height: 59.83%;
+        display: flex;
+        /* flex-direction: column; */
+        gap: 32px;
+    }
+
+    .choose-body1 {
+        height: 83.33%;
+        width: 31.89%;
+        margin: 60px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 1px solid rgba(255, 228, 146, 1);
+
+    }
+
+    .choose-body2 {
+        width: 31.89%;
+        background-color: rgba(4, 56, 115, 1);
+    }
+
+    .choose-body3 {
+        height: 83.33%;
+        width: 31.89%;
+        margin: 60px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: 1px solid rgba(255, 228, 146, 1);
+
+    }
+
+    .sponsors {
+        height: 70%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .our-sponsors {
+        /* border: 1px solid black; */
+        width: 77.11%;
+        height: 16.17%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(sponsor-underline.png);
+        background-repeat: no-repeat;
+        background-position: 60% 120%;
+    }
+
+    .our-sponsors-symbol {
+        /* border: 1px solid black; */
+        width: 77.11%;
+        height: 13.20%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .client-feedback {
+        height: 131.03%;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .client-head {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 70px;
+        line-height: 84px;
+        text-align: center;
+        background-image: url(client-back.png);
+        background-repeat: no-repeat;
+        background-position: 85% 120%;
+        width: 76.99%;
+        height: 8.45%;
+    }
+
+    .client-body {
+        width: 76.99%;
+        height: 50.12%;
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        gap: 30px;
+        /* flex-direction: column; */
+
+    }
+
+    .client-end {
+        height: 62.45%;
+        width: 100vw;
+        /* border: 1px solid black; */
+        background-color: rgba(4, 56, 115, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .client-end-body {
+        width: 80%;
+        height: 35%;
+        /* border: 1px solid black; */
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 60px;
+
+    }
+</style>
+
+<body>
+    <div class="main-box">
+        <div class="intro-box">
+            <div class="header">
+                <div style="display: flex; justify-content: space-evenly; gap: 10px;">
+                    <img style="height: 29px; width: 37px;" src="Logo Icon.png">
+                    <p class="inter-button" style="font-size: 28px; color:rgba(255, 255, 255, 1);">whitepace</p>
+                </div>
+                <div class="header-menu">
+                    <p>Products </p>
+                    <img class="down-arrow" src="Down Arrow.png">
+                    <p>Solutions</p>
+                    <img class="down-arrow" src="Down Arrow.png">
+
+                    <p>Resources</p>
+                    <img class="down-arrow" src="Down Arrow.png">
+
+                    <p>Pricing</p>
+                    <img class="down-arrow" src="Down Arrow.png">
+
+                    <button class="button1">Login</button>
+                    <button class="button2 inter-button">Try whitepace Free <img
+                            style=" display: flex; height: 10px; width: 10px; gap: 10px;" src="Right Arrow.png">
+                    </button>
+
+
+                </div>
+            </div>
+            <div class="intro-body">
+                <div class="intro">
+                    <div class="intro-txt">
+
+                        <h1 style="font-size: 64px;">Get More Done with whitepace</h1>
+
+                        <p>Project management software that enables your teams to collaborate, plan, analyze and manage
+                            everyday tasks</p>
+
+                        <div style="padding-top: 20px;">
+                            <button class="button2 inter-button">Try whitepace Free <img
+                                    style=" display: flex; height: 10px; width: 10px; gap: 10px;" src="Right Arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="intro-img">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-back-img">
+                <div class="project">
+                    <div class="project-txt">
+
+                        <h1
+                            style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 72px;line-height: 100%;letter-spacing: -2%;">
+                            Project Management</h1>
+
+                        <p
+                            style="font-family: Inter;font-weight: 400;font-style: Regular;font-size: 18px;line-height: 30px;letter-spacing: -2%;">
+                            Images, videos, PDFs and audio files are supported. Create math expressions and diagrams
+                            directly
+                            from the app. Take photos with the mobile app and save them to a note.</p>
+
+                        <div style="padding-top: 20px;">
+                            <button class="get-started">Get Started<img
+                                    style=" display: flex; height: 10px; width: 10px; gap: 10px;" src="Right Arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-img">
+
+                    </div>
+                </div>
+            </div>
+            <div class="extension">
+                <div class="project">
+                    <div class="extension-txt">
+
+                        <h1 style="font-size: 59px;  font-family: Inter; ">
+                            Use as Extension</h1>
+
+                        <p
+                            style=" font-family: Inter;font-weight: 400;font-style: Regular;font-size: 18px;line-height: 30px;letter-spacing: -2%;">
+                            Use the web clipper extension, available on Chrome and Firefox, to save web pages or take
+                            screenshots as notes.
+                            .</p>
+
+                        <div style="padding-top: 20px;">
+                            <button class="get-started">Let's Go<img
+                                    style=" display: flex; height: 10px; width: 10px; gap: 10px;" src="Right Arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="extension-img">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="choose">
+                <div class="choose-head" style="display: flex;
+            flex-direction: column; justify-content: space-between;">
+                    <p class="choose-back"
+                        style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 72px;line-height: 100%;letter-spacing: -2%;text-align: center;">
+                        Choose Your Plan</p>
+                    <p class="inter-button"
+                        style="font-weight: 400;font-style: Regular;font-size: 25px;line-height: 30px;letter-spacing: -2%;text-align: center;">
+                        Whether you want to get organized, keep your personal life on track, or boost workplace
+                        productivity, Evernote has
+                        the right plan for you.</p>
+                </div>
+                <div class="choose-body">
+                    <div class="choose-body1" style="display: flex;  align-items: center; gap: 4%;">
+                        <div
+                            style="display: flex;flex-direction: column;justify-content: space-evenly; width: 81.34%; height: 24.13%; gap: 25px;">
+                            <p
+                                style="font-family: Inter;font-weight: 600;font-style: Semi Bold;font-size: 24px;line-height: 36px;letter-spacing: 0%;">
+                                Free</p>
+                            <p
+                                style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 36px;line-height: 100%;letter-spacing: -2%;">
+                                $0</p>
+                            <p
+                                style="font-family: Inter;font-weight: 500;font-style: Medium;font-size: 18px;line-height: 23px;letter-spacing: -2%;">
+                                Capture ideas and find them quickly</p>
+                        </div>
+                        <div style="width: 81.34%; height: 47.34%;  ">
+                            <div class="inter-button"
+                                style="font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;  display: flex; flex-direction: column; justify-content: space-evenly; gap: 28px; ">
+                                <ul>
+                                    <li>
+                                        sync unlimited devices
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li> 10 GB monthly uploads</li>
+                                </ul>
+                                <ul>
+                                    <li>200 MB max. note size</li>
+                                </ul>
+                                <ul>
+                                    <li> Customize Home dashboard and access extra widgets</li>
+                                </ul>
+                                <ul>
+                                    <li>Connect primary Google Calendar account</li>
+                                </ul>
+                                <ul>
+                                    <li>Add due dates, reminders, and notifications to your tasks</li>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                        <div>
+                            <button class="inter-button"
+                                style=" margin-right: 180px; border: 1px solid rgba(255, 228, 146, 1);background: rgba(255, 255, 255, 1); padding: 20px 32px; border-radius: 8px;font-weight: 500;font-style: Medium;font-size: 16px;line-height: 100%;letter-spacing: -2%;">Get
+                                Started</button>
+                        </div>
+                    </div>
+                    <div class="choose-body2"
+                        style="display: flex; flex-direction: column;  align-items: center; justify-content: center; gap: 4%; color: rgba(255, 255, 255, 1);">
+                        <div
+                            style="display: flex;flex-direction: column;justify-content: space-evenly; width: 81.34%; height: 24.13%; gap: 25px;">
+                            <p
+                                style="font-family: Inter;font-weight: 600;font-style: Semi Bold;font-size: 24px;line-height: 36px;letter-spacing: 0%;">
+                                Personal</p>
+                            <p
+                                style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 36px;line-height: 100%;letter-spacing: -2%; color: rgba(255, 228, 146, 1);">
+                                $11.99</p>
+                            <p
+                                style="font-family: Inter;font-weight: 500;font-style: Medium;font-size: 18px;line-height: 23px;letter-spacing: -2%;">
+                                Keep home and family on track</p>
+                        </div>
+                        <div style="width: 81.34%; height: 47.34%;  ">
+                            <div class="inter-button"
+                                style="font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;  display: flex; flex-direction: column; justify-content: space-evenly; gap: 28px; ">
+                                <ul style="color: rgba(255, 228, 146, 1);">
+                                    <li>
+                                        <p style="color:rgba(255, 255, 255, 1)"> sync unlimited devices</p>
+                                    </li>
+                                </ul>
+                                <ul style="color: rgba(255, 228, 146, 1);">
+                                    <li>
+                                        <p style="color:rgba(255, 255, 255, 1)"> 10 GB monthly uploads </p>
+                                    </li>
+                                </ul>
+                                <ul style="color: rgba(255, 228, 146, 1);">
+                                    <li>
+                                        <p style="color:rgba(255, 255, 255, 1)">200 MB max. note size </p>
+                                    </li>
+                                </ul>
+                                <ul style="color: rgba(255, 228, 146, 1);">
+                                    <li>
+                                        <p style="color:rgba(255, 255, 255, 1)"> Customize Home dashboard and access
+                                            extra
+                                            widgets </p>
+                                    </li>
+                                </ul>
+                                <ul style="color: rgba(255, 228, 146, 1);">
+                                    <li>
+                                        <p style="color:rgba(255, 255, 255, 1)">Connect primary Google Calendar account
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul style="color: rgba(255, 228, 146, 1); ">
+                                    <li>
+                                        <p style="color:rgba(255, 255, 255, 1)">Add due dates, reminders, and
+                                            notifications
+                                            to your tasks </p>
+                                    </li>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                        <div>
+                            <button class="inter-button"
+                                style=" margin-right: 180px; border: none; background: rgba(79, 156, 249, 1); color:rgba(255, 255, 255, 1);padding: 20px 32px; border-radius: 8px;font-weight: 500;font-style: Medium;font-size: 16px;line-height: 100%;letter-spacing: -2%;">Get
+                                Started</button>
+                        </div>
+                    </div>
+                    <div class="choose-body3" style="display: flex;  align-items: center; gap: 4%;">
+                        <div
+                            style="display: flex;flex-direction: column;justify-content: space-evenly; width: 81.34%; height: 24.13%; gap: 25px;">
+                            <p
+                                style="font-family: Inter;font-weight: 600;font-style: Semi Bold;font-size: 24px;line-height: 36px;letter-spacing: 0%;">
+                                Organization</p>
+                            <p
+                                style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 36px;line-height: 100%;letter-spacing: -2%;">
+                                $49.99</p>
+                            <p
+                                style="font-family: Inter;font-weight: 500;font-style: Medium;font-size: 18px;line-height: 23px;letter-spacing: -2%;">
+                                Capture ideas and find them quickly</p>
+                        </div>
+                        <div style="width: 81.34%; height: 47.34%;  ">
+                            <div class="inter-button"
+                                style="font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;  display: flex; flex-direction: column; justify-content: space-evenly; gap: 28px; ">
+                                <ul>
+                                    <li>
+                                        sync unlimited devices
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li> 10 GB monthly uploads</li>
+                                </ul>
+                                <ul>
+                                    <li>200 MB max. note size</li>
+                                </ul>
+                                <ul>
+                                    <li> Customize Home dashboard and access extra widgets</li>
+                                </ul>
+                                <ul>
+                                    <li>Connect primary Google Calendar account</li>
+                                </ul>
+                                <ul>
+                                    <li>Add due dates, reminders, and notifications to your tasks</li>
+                                </ul>
+
+
+
+                            </div>
+                        </div>
+                        <div>
+                            <button class="inter-button"
+                                style=" margin-right: 180px; border: 1px solid rgba(255, 228, 146, 1);background: rgba(255, 255, 255, 1); padding: 20px 32px; border-radius: 8px;font-weight: 500;font-style: Medium;font-size: 16px;line-height: 100%;letter-spacing: -2%;">Get
+                                Started</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sponsors">
+                <div class="our-sponsors">
+                    <p
+                        style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 72px;line-height: 100%;letter-spacing: -2%;text-align: center;">
+                        Our sponsors</p>
+                </div>
+                <div class="our-sponsors-symbol">
+                    <img style="width: 55.47px;height: 68px;gap: 4px;" src="apple.png">
+                    <div style="width: 19.37%; height: 87.32%; padding-top: 4px;"><img src="microsoft 1.png" alt="">
+                    </div>
+                    <div><img src="SLACK.png"></div>
+                    <div><img src="Google.png"></div>
+                </div>
+
+            </div>
+            <div class="client-feedback">
+                <div class="client-head">
+                    <p class="inter-button">What Our Clients Says</p>
+                </div>
+                <div class="client-body">
+                    <div
+                        style="display: flex; flex-direction: column; justify-content: space-evenly;align-items: center; width: 31.89%; padding: 20px;">
+                        <div style="display: flex; gap: 45px; flex-direction: column; justify-content: space-between;">
+                            <img style="width: 21.96%;height: 27.50%;" src="Quote.png" alt="">
+                            <p class="inter-button"
+                                style="font-weight: 400;font-style: Regular;font-size: 18px;line-height: 30px;letter-spacing: -2%;">
+                                Whitepate is designed as a collaboration tool for businesses that is a full project
+                                management solution.</p>
+                            <p style="border: 1px solid black;"></p>
+                        </div>
+                        <div style="display: flex;justify-content: space-between;">
+                            <img style="clip-path: circle(40px); object-fit: fill; height: 85px; width: 85px;"
+                                src="client-img-1.png" alt="">
+                            <div
+                                style="width: 63%;height: 100%; display: flex;flex-direction: column; justify-content: space-between; padding: 5px 0px; ">
+                                <p class="inter-button"
+                                    style="font-weight: 600;font-style: Semi Bold;font-size: 22px;line-height: 36px;letter-spacing: 0%;">
+                                    Oberon Shaw, MCH</p>
+                                <p class="inter-button"
+                                    style="font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;">
+                                    Head of Talent Acquisition, North America</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; justify-content: space-evenly;align-items: center;width: 31.89%; padding: 20px;  background: rgba(79, 156, 249, 1);border-radius: 10px; ">
+                        <div style="display: flex; gap: 45px; flex-direction: column; justify-content: space-between;">
+                            <img style="width: 21.96%;height: 27.50%;" src="Quote-2.png" alt="">
+                            <p class="inter-button"
+                                style="font-weight: 400;font-style: Regular;font-size: 18px;line-height: 30px;letter-spacing: -2%; color: rgba(255, 255, 255, 1);">
+                                Whitepate is designed as a collaboration tool for businesses that is a full project
+                                management solution.</p>
+                            <p style="border: 1px solid black;"></p>
+                        </div>
+                        <div style="display: flex;justify-content: space-between;">
+                            <img style="clip-path: circle(40px); object-fit: fill; height: 85px; width: 85px;"
+                                src="client-img-2.png" alt="">
+                            <div
+                                style="width: 63%;height: 100%; display: flex;flex-direction: column; justify-content: space-between; padding: 5px 0px; ">
+                                <p class="inter-button"
+                                    style="font-weight: 600;font-style: Semi Bold;font-size: 22px;line-height: 36px;letter-spacing: 0%;  color:  rgba(4, 56, 115, 1);">
+                                    Oberon Shaw, MCH</p>
+                                <p class="inter-button"
+                                    style="font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;   color: rgba(255, 255, 255, 1);">
+                                    Head of Talent Acquisition, North America</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column;justify-content: space-evenly;align-items: center;width: 31.89%; padding: 20px; background: rgba(79, 156, 249, 1);border-radius: 10px;">
+                        <div style="display: flex; gap: 45px; flex-direction: column; justify-content: space-between;">
+                            <img style="width: 21.96%;height: 27.50%;" src="Quote-2.png" alt="">
+                            <p class="inter-button"
+                                style="font-weight: 400;font-style: Regular;font-size: 18px;line-height: 30px;letter-spacing: -2%;   color: rgba(255, 255, 255, 1);">
+                                Whitepate is designed as a collaboration tool for businesses that is a full project
+                                management solution.</p>
+                            <p style="border: 1px solid black;"></p>
+                        </div>
+                        <div style="display: flex;justify-content: space-between;">
+                            <img style="clip-path: circle(40px); object-fit: fill; height: 85px; width: 85px;"
+                                src="client-img-3.png" alt="">
+                            <div
+                                style="width: 63%;height: 100%; display: flex;flex-direction: column; justify-content: space-between; padding: 5px 0px; ">
+                                <p class="inter-button"
+                                    style="font-weight: 600;font-style: Semi Bold;font-size: 22px;line-height: 36px;letter-spacing: 0%; color:  rgba(4, 56, 115, 1);">
+                                    Oberon Shaw, MCH</p>
+                                <p class="inter-button"
+                                    style="font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;  color: rgba(255, 255, 255, 1);">
+                                    Head of Talent Acquisition, North America</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <p style=" font-size: 4.69rem;gap: 12px;color: rgba(79, 156, 249, 1);">.</p>
+                    <p style=" font-size: 4.69rem;gap: 12px;color:rgba(4, 56, 115, 1);">.</p>
+                    <p style=" font-size: 4.69rem;gap: 12px;color: rgba(79, 156, 249, 1);">.</p>
+                </div>
+            </div>
+            <div class="client-end">
+                <div class="client-end-body">
+                    <div style="height: 15%;width: 35.65%; display: flex; gap: 5px;flex-direction: column;">
+                        <div style="display: flex; justify-content: space-around;
+                      width: 48% ;">
+                            <img style="height: 29px; width: 37px;" src="Logo Icon.png">
+                            <p class="inter-button" style="font-size: 28px; color:rgba(255, 255, 255, 1);">whitepace</p>
+                        </div>
+                        <div>
+                            <p class="inter-button"
+                                style="color: rgba(255, 255, 255, 1); width: 100%;font-weight: 400;font-style: Regular;font-size: 16px;line-height: 24px;letter-spacing: -2%;">
+                                whitepace was created for the new ways we live and work. We make a better workspace
+                                around
+                                the world</p>
+                        </div>
+                    </div>
+                    <div class="inter-button"
+                        style="color: rgba(255, 255, 255, 1) ; display: flex; flex-direction: column; gap: 15px;font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;">
+                        <p
+                            style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 18px;line-height: 100%;letter-spacing: -2%;">
+                            Product</p>
+
+                        <p style="color: rgba(255, 228, 146, 1);">Overview</p>
+                        <p> Pricing</p>
+                        <p>Customer stories</p>
+
+                    </div>
+                    <div class="inter-button"
+                        style="color: rgba(255, 255, 255, 1) ; display: flex; flex-direction: column; gap: 15px;font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;">
+                        <p
+                            style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 18px;line-height: 100%;letter-spacing: -2%;">
+                            Resources</p>
+
+                        <p>Blog</p>
+                        <p> Guides & tutorials</p>
+                        <p>Help center</p>
+                    </div>
+                    <div class="inter-button"
+                        style="color: rgba(255, 255, 255, 1) ; display: flex; flex-direction: column; gap: 15px;font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;">
+
+                        <p
+                            style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 18px;line-height: 100%;letter-spacing: -2%;">
+                            Company</p>
+
+                        <p>About us</p>
+                        <p> Careers</p>
+                        <p>Media kit</p>
+                    </div>
+                    <div class="inter-button"
+                        style="width: 17.50%; height: 100%; display: flex; flex-direction: column; justify-content: space-between; color: rgba(255, 255, 255, 1) ;">
+                        <p
+                            style="font-weight: 700;font-style: Bold;font-size: 28px;line-height: 26px;letter-spacing: -2%;">
+                            Try It Today</p>
+                        <p
+                            style="font-weight: 400;font-style: Regular;font-size: 16px;line-height: 20px;letter-spacing: -2%;">
+                            Get started for free.Add your whole team as your needs grow.</p>
+                        <div style="display: flex; ">
+                            <button
+                                style="background: rgba(79, 156, 249, 1); display: flex; align-items: center; color:  rgba(255, 255, 255, 1); padding: 10px 40px; border: none; border-radius: 6px;gap: 10px;">Start
+                                today
+                                <img style=" height: 10px; width: 10px; gap: 20px;" src="Right Arrow.png">
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
